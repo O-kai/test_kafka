@@ -19,5 +19,6 @@ public class MessageListener {
         //消息偏移量
         long offset = record.offset();
         System.out.println("读取的消息：" + message + "\n当前偏移量：" + offset);
+        System.out.println(record);
     }
 }
