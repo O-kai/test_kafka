@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class MysqlMessageListener {
-    @KafkaListener(topics = {"zkEsl"}, groupId = "mysqlGroup")
+    @KafkaListener(topics = {"example"}, groupId = "mysqlGroup")
     public void listener(ConsumerRecord<String, String> record) {
         System.out.println("获得数据库变动信息，MysqlMessageListener");
         //获取消息
